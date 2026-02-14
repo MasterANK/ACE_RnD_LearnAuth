@@ -1,0 +1,6 @@
+#Vitual Enviroments
+.env
+.venv
+
+#Testcase Folders
+test/
