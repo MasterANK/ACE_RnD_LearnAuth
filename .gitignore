@@ -1,6 +1,8 @@
 #Vitual Enviroments
 .env
+src\BackEnd\.env
 .venv
 
 #Testcase Folders
 test/
+
