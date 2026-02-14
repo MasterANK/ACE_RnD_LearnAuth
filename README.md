@@ -21,7 +21,7 @@ Link to StreamLit hosting : \<to be added>
 <br>
 
 # Contributers:
-|       Mmeber Name               | Github Profile Links   |
+|       Member Name               | Github Profile Links   |
 | ------------------------------- |----------------------- |
 | Ankit Aggarwal (Domain Mentor)  |[MasterANK](https://github.com/MasterANK)|
 | Krishna Sethi                   |[krishnasethi99](https://github.com/krishnasethi99) |
