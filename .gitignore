@@ -1,0 +1,10 @@
+#Vitual Enviroments
+.env
+src/BackEnd/.env
+.venv
+src/BackEnd/__pycache__
+
+
+#Testcase Folders
+test/
+

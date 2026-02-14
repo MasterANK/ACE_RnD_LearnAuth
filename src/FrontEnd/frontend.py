@@ -1,7 +1,26 @@
 import streamlit as st
 from learn_auth_engine import recommend_videos
+import backend 
+
 st.set_page_config(page_title="LearnAuth",page_icon="Ace.png",layout="wide")
 left_col, right_col = st.columns([2, 1])
+
+#PERSONALISATION 
+def popup():
+    popover = st.popover("Personalised Search")
+    with popover:
+        col1, col2 = st.columns([5, 3])
+        with col1:
+            st.markdown("**Choose your preferred language:**")
+        with col2:
+            st.session_state.language = st.selectbox("", ["English", "Hindi", "Marathi", "Tamil", "Spanish", "German"], key = "language_select")
+        col3, col4 = st.columns([4, 5])
+        with col3:
+            st.markdown("**Choose your mode of learning:**")
+        with col4:
+            st.session_state.mode = st.selectbox("", ["Practical", "Theoretical with notes", "A mix of both"], key = "mode_select")
+        if st.button("Apply", type = "primary"):
+            st.session_state.selected_filters = [st.session_state.language, st.session_state.mode]
 
 # LEFT SIDE 
 with left_col:
