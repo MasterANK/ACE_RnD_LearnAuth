@@ -30,6 +30,7 @@ google-generativeai==0.8.6
 googleapis-common-protos==1.72.0
 grpcio==1.78.0
 grpcio-status==1.71.2
+h11==0.16.0
 httplib2==0.31.2
 idna==3.11
 ipykernel==7.2.0
@@ -89,6 +90,7 @@ typing_extensions==4.15.0
 tzdata==2025.3
 uritemplate==4.2.0
 urllib3==2.6.3
+uvicorn==0.40.0
 watchdog==6.0.0
 wcwidth==0.6.0
 youtube-transcript-api==1.2.4
