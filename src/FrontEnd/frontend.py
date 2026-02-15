@@ -30,7 +30,11 @@ with left_col:
     st.text_input(
         "Enter the Youtube link video",
         placeholder="https://www.youtube.com/watch?........" )
-    analyse_button_left = st.button("Analyse Video")
+    col1, col2 = st.columns([2, 10])
+    with col1:
+        analyse_button_left = st.button("Analyse Video")
+    with col2: 
+        popup()
     st.header("Analysis Details")
     if analyse_button_left:
         with st.spinner("Processing...... Pls wait a moment........"):
@@ -49,7 +53,7 @@ with left_col:
 
 # RIGHT SIDE  WORKING BACKEND SEARCH + OUTPUT
 with right_col:
-    st.subheader("Search for reccomended videos by Topic")
+    st.subheader("Search for recommended videos by Topic")
     topic = st.text_input(
         "Enter the Youtube topic",
         placeholder="Machine Learning, Python, Data Structures...",
