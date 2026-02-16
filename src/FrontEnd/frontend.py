@@ -1,6 +1,6 @@
 import streamlit as st
-# from learn_auth_engine import recommend_videos
-# import backend 
+from learn_auth_engine import recommend_videos
+import backend 
 
 st.set_page_config(page_title="LearnAuth",page_icon="Ace.png",layout="wide")
 left_col, right_col = st.columns([2, 1])
@@ -74,11 +74,11 @@ with right_col:
         placeholder="Machine Learning, Python, Data Structures...",
         key="right_search")
     analyse_button_right = st.button("Analyse Video", key="right_button")
-    # if analyse_button_right and topic:
-    #     with st.spinner("Running backend analysis..."):
-    #         ranked_df = recommend_videos(topic)
-    #         if ranked_df is None:
-    #             st.error("No suitable videos found.")
-    #         else:
-    #             st.success("Backend Output Generated")
-    #             st.dataframe(ranked_df, use_container_width=True)
+    if analyse_button_right and topic:
+        with st.spinner("Running backend analysis..."):
+            ranked_df = recommend_videos(topic)
+            if ranked_df is None:
+                st.error("No suitable videos found.")
+            else:
+                st.success("Backend Output Generated")
+                st.dataframe(ranked_df, use_container_width=True)
